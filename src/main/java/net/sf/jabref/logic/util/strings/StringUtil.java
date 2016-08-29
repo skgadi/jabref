@@ -196,6 +196,18 @@ public class StringUtil {
     }
 
     /**
+     * Quotes each and every character, e.g. '!' as &#33;. Used for verbatim
+     * display of arbitrary strings that may contain HTML entities.
+     */
+    public static String quoteForHTML(String toQuote) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < toQuote.length(); ++i) {
+            result.append("&#").append((int) toQuote.charAt(i)).append(';');
+        }
+        return result.toString();
+    }
+
+    /**
      * Decodes an encoded double String array back into array form. The array
      * is assumed to be square, and delimited by the characters ';' (first dim) and
      * ':' (second dim).
@@ -592,17 +604,4 @@ public class StringUtil {
         }
         return "<b>" + input + "</b>";
     }
-
-    /**
-     * Quotes each and every character, e.g. '!' as &#33;. Used for verbatim
-     * display of arbitrary strings that may contain HTML entities.
-     */
-    public static String quoteForHTML(String toQuote) {
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < toQuote.length(); ++i) {
-            result.append("&#").append((int) toQuote.charAt(i)).append(';');
-        }
-        return result.toString();
-    }
-
 }

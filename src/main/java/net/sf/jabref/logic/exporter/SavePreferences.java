@@ -3,7 +3,7 @@ package net.sf.jabref.logic.exporter;
 import java.nio.charset.Charset;
 
 import net.sf.jabref.logic.bibtex.LatexFieldFormatterPreferences;
-import net.sf.jabref.model.SaveOrderConfig;
+import net.sf.jabref.model.metadata.SaveOrderConfig;
 import net.sf.jabref.preferences.JabRefPreferences;
 
 public class SavePreferences {

@@ -1,4 +1,4 @@
-package net.sf.jabref.model;
+package net.sf.jabref.model.metadata;
 
 import java.util.ArrayList;
 import java.util.Arrays;

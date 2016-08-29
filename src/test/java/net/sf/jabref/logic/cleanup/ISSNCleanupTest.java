@@ -3,9 +3,9 @@ package net.sf.jabref.logic.cleanup;
 import java.util.Optional;
 
 import net.sf.jabref.logic.layout.LayoutFormatterPreferences;
-import net.sf.jabref.model.BibDatabaseContext;
-import net.sf.jabref.model.FileDirectoryPreferences;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.entry.BibEntry;
+import net.sf.jabref.model.metadata.FileDirectoryPreferences;
 
 import org.junit.Assert;
 import org.junit.Before;

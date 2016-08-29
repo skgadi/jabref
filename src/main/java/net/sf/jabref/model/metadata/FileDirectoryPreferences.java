@@ -1,4 +1,4 @@
-package net.sf.jabref.model;
+package net.sf.jabref.model.metadata;
 
 import java.util.Map;
 import java.util.Optional;

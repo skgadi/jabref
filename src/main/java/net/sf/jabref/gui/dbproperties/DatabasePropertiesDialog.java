@@ -32,9 +32,9 @@ import net.sf.jabref.logic.exporter.FieldFormatterCleanups;
 import net.sf.jabref.logic.help.HelpFile;
 import net.sf.jabref.logic.l10n.Encodings;
 import net.sf.jabref.logic.l10n.Localization;
-import net.sf.jabref.model.MetaData;
-import net.sf.jabref.model.SaveOrderConfig;
 import net.sf.jabref.model.database.DatabaseLocation;
+import net.sf.jabref.model.metadata.MetaData;
+import net.sf.jabref.model.metadata.SaveOrderConfig;
 
 import com.jgoodies.forms.builder.ButtonBarBuilder;
 import com.jgoodies.forms.builder.FormBuilder;

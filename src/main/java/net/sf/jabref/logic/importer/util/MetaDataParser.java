@@ -11,9 +11,9 @@ import java.util.Optional;
 
 import net.sf.jabref.logic.exporter.FieldFormatterCleanups;
 import net.sf.jabref.logic.l10n.Localization;
-import net.sf.jabref.model.MetaData;
 import net.sf.jabref.model.ParseException;
 import net.sf.jabref.model.groups.GroupTreeNode;
+import net.sf.jabref.model.metadata.MetaData;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

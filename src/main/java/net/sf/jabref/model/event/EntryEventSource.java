@@ -1,4 +1,4 @@
-package net.sf.jabref.event.source;
+package net.sf.jabref.model.event;
 
 /**
  * This enum represents the context EntryEvents were sent from.

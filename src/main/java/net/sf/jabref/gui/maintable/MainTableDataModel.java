@@ -11,7 +11,7 @@ import net.sf.jabref.gui.search.HitOrMissComparator;
 import net.sf.jabref.gui.search.matchers.EverythingMatcher;
 import net.sf.jabref.gui.search.matchers.SearchMatcher;
 import net.sf.jabref.gui.util.comparator.IsMarkedComparator;
-import net.sf.jabref.model.BibDatabaseContext;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.entry.BibEntry;
 
 import ca.odell.glazedlists.BasicEventList;

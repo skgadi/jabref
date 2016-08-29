@@ -1,6 +1,6 @@
-package net.sf.jabref.event;
+package net.sf.jabref.model.event;
 
-import net.sf.jabref.model.MetaData;
+import net.sf.jabref.model.metadata.MetaData;
 
 public class GroupUpdatedEvent {
 

@@ -10,7 +10,7 @@ import net.sf.jabref.logic.exporter.FieldFormatterCleanups;
 import net.sf.jabref.logic.exporter.MetaDataSerializer;
 import net.sf.jabref.logic.formatter.casechanger.LowerCaseFormatter;
 import net.sf.jabref.logic.util.OS;
-import net.sf.jabref.model.MetaData;
+import net.sf.jabref.model.metadata.MetaData;
 
 import org.junit.Before;
 import org.junit.Test;

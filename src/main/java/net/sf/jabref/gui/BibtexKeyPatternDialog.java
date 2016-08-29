@@ -17,8 +17,8 @@ import net.sf.jabref.Globals;
 import net.sf.jabref.gui.bibtexkeypattern.BibtexKeyPatternPanel;
 import net.sf.jabref.gui.keyboard.KeyBinder;
 import net.sf.jabref.logic.l10n.Localization;
-import net.sf.jabref.model.MetaData;
 import net.sf.jabref.model.bibtexkeypattern.AbstractBibtexKeyPattern;
+import net.sf.jabref.model.metadata.MetaData;
 
 import com.jgoodies.forms.builder.ButtonBarBuilder;
 

@@ -16,8 +16,8 @@ import net.sf.jabref.gui.worker.AbstractWorker;
 import net.sf.jabref.logic.cleanup.CleanupPreset;
 import net.sf.jabref.logic.cleanup.CleanupWorker;
 import net.sf.jabref.logic.l10n.Localization;
-import net.sf.jabref.model.BibDatabaseContext;
 import net.sf.jabref.model.FieldChange;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.preferences.JabRefPreferences;
 

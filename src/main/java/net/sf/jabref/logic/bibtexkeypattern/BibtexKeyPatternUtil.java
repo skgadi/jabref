@@ -11,11 +11,11 @@ import java.util.regex.Pattern;
 
 import net.sf.jabref.logic.formatter.casechanger.Word;
 import net.sf.jabref.logic.util.strings.StringUtil;
-import net.sf.jabref.model.MetaData;
 import net.sf.jabref.model.database.BibDatabase;
 import net.sf.jabref.model.entry.AuthorList;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.entry.FieldName;
+import net.sf.jabref.model.metadata.MetaData;
 import net.sf.jabref.model.util.RemoveLatexCommands;
 
 import org.apache.commons.logging.Log;

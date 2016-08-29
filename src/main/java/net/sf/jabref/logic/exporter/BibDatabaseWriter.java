@@ -23,17 +23,17 @@ import net.sf.jabref.logic.bibtex.comparator.CrossRefEntryComparator;
 import net.sf.jabref.logic.bibtex.comparator.FieldComparator;
 import net.sf.jabref.logic.bibtex.comparator.FieldComparatorStack;
 import net.sf.jabref.logic.bibtex.comparator.IdComparator;
-import net.sf.jabref.model.BibDatabaseContext;
 import net.sf.jabref.model.EntryTypes;
 import net.sf.jabref.model.FieldChange;
-import net.sf.jabref.model.MetaData;
-import net.sf.jabref.model.SaveOrderConfig;
 import net.sf.jabref.model.database.BibDatabase;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.database.BibDatabaseMode;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.entry.BibtexString;
 import net.sf.jabref.model.entry.CustomEntryType;
 import net.sf.jabref.model.entry.EntryType;
+import net.sf.jabref.model.metadata.MetaData;
+import net.sf.jabref.model.metadata.SaveOrderConfig;
 
 public abstract class BibDatabaseWriter<E extends SaveSession> {
 

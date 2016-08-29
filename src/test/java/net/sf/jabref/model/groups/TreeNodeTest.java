@@ -1,4 +1,4 @@
-package net.sf.jabref.logic.groups;
+package net.sf.jabref.model.groups;
 
 import java.util.Arrays;
 import java.util.Collections;

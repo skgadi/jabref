@@ -1,4 +1,4 @@
-package net.sf.jabref.logic.groups;
+package net.sf.jabref.model.groups;
 
 import net.sf.jabref.model.ParseException;
 import net.sf.jabref.model.entry.BibEntry;

@@ -8,12 +8,12 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import net.sf.jabref.event.source.EntryEventSource;
 import net.sf.jabref.logic.exporter.MetaDataSerializer;
-import net.sf.jabref.model.BibDatabaseContext;
-import net.sf.jabref.model.MetaData;
 import net.sf.jabref.model.database.BibDatabase;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.entry.BibEntry;
+import net.sf.jabref.model.event.EntryEventSource;
+import net.sf.jabref.model.metadata.MetaData;
 import net.sf.jabref.shared.exception.DatabaseNotSupportedException;
 import net.sf.jabref.shared.exception.OfflineLockException;
 import net.sf.jabref.shared.exception.SharedEntryNotPresentException;

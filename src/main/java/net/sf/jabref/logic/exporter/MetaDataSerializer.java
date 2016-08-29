@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import net.sf.jabref.logic.util.OS;
-import net.sf.jabref.model.MetaData;
+import net.sf.jabref.model.metadata.MetaData;
 import net.sf.jabref.model.util.ModelStringUtil;
 
 public class MetaDataSerializer {

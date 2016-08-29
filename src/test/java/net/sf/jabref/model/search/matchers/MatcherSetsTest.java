@@ -1,10 +1,10 @@
-package net.sf.jabref.logic.search.matchers;
+package net.sf.jabref.model.search.matchers;
 
-import net.sf.jabref.logic.search.rules.MockSearchMatcher;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.search.matchers.MatcherSet;
 import net.sf.jabref.model.search.matchers.MatcherSets;
 import net.sf.jabref.model.search.matchers.NotMatcher;
+import net.sf.jabref.model.search.rules.MockSearchMatcher;
 
 import org.junit.Test;
 

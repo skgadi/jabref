@@ -70,8 +70,6 @@ import net.sf.jabref.logic.util.OS;
 import net.sf.jabref.logic.util.UpdateFieldPreferences;
 import net.sf.jabref.logic.util.io.FileHistory;
 import net.sf.jabref.logic.xmp.XMPPreferences;
-import net.sf.jabref.model.FileDirectoryPreferences;
-import net.sf.jabref.model.SaveOrderConfig;
 import net.sf.jabref.model.bibtexkeypattern.AbstractBibtexKeyPattern;
 import net.sf.jabref.model.bibtexkeypattern.GlobalBibtexKeyPattern;
 import net.sf.jabref.model.database.BibDatabaseMode;
@@ -80,6 +78,8 @@ import net.sf.jabref.model.entry.CustomEntryType;
 import net.sf.jabref.model.entry.EntryUtil;
 import net.sf.jabref.model.entry.FieldName;
 import net.sf.jabref.model.entry.SpecialFields;
+import net.sf.jabref.model.metadata.FileDirectoryPreferences;
+import net.sf.jabref.model.metadata.SaveOrderConfig;
 import net.sf.jabref.model.util.ModelStringUtil;
 
 import org.apache.commons.logging.Log;

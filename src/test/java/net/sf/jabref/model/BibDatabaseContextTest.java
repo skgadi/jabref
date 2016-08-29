@@ -1,8 +1,10 @@
 package net.sf.jabref.model;
 
 import net.sf.jabref.model.database.BibDatabase;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.database.BibDatabaseMode;
 import net.sf.jabref.model.entry.BibEntry;
+import net.sf.jabref.model.metadata.MetaData;
 
 import org.junit.Test;
 

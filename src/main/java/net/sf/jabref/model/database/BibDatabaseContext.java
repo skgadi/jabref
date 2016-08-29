@@ -1,4 +1,4 @@
-package net.sf.jabref.model;
+package net.sf.jabref.model.database;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import net.sf.jabref.model.database.BibDatabase;
-import net.sf.jabref.model.database.BibDatabaseMode;
-import net.sf.jabref.model.database.BibDatabaseModeDetection;
-import net.sf.jabref.model.database.DatabaseLocation;
+import net.sf.jabref.model.Defaults;
 import net.sf.jabref.model.entry.FieldName;
+import net.sf.jabref.model.metadata.FileDirectoryPreferences;
+import net.sf.jabref.model.metadata.MetaData;
 import net.sf.jabref.shared.DBMSSynchronizer;
 
 /**

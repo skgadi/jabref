@@ -7,8 +7,8 @@ import javax.swing.Action;
 import net.sf.jabref.gui.IconTheme;
 import net.sf.jabref.gui.JabRefFrame;
 import net.sf.jabref.logic.l10n.Localization;
-import net.sf.jabref.model.BibDatabaseContext;
 import net.sf.jabref.model.Defaults;
+import net.sf.jabref.model.database.BibDatabaseContext;
 import net.sf.jabref.model.database.BibDatabaseMode;
 
 /**

@@ -4,8 +4,6 @@ import java.util.Optional;
 
 import net.sf.jabref.logic.util.OS;
 import net.sf.jabref.model.entry.FileField;
-import net.sf.jabref.model.util.ModelStringUtil;
-
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -139,15 +137,6 @@ public class StringUtilTest {
     }
 
     @Test
-    public void testUnquote() {
-        assertEquals("a:", ModelStringUtil.unquote("a::", ':'));
-        assertEquals("a:;", ModelStringUtil.unquote("a:::;", ':'));
-        assertEquals("a:b%c;", ModelStringUtil.unquote("a::b:%c:;", ':'));
-    }
-
-
-
-    @Test
     public void testEncodeStringArray() {
         assertEquals(ENCODED_STRING_ARRAY_1, FileField.encodeStringArray(STRING_ARRAY_1));
         assertEquals(ENCODED_STRING_ARRAY_2, FileField.encodeStringArray(STRING_ARRAY_2));
@@ -162,12 +151,6 @@ public class StringUtilTest {
         // arrays first differed at element [0][1]; expected: null<null> but was: java.lang.String<null>
         // assertArrayEquals(stringArray2res, StringUtil.decodeStringDoubleArray(encStringArray2));
         assertArrayEquals(STRING_ARRAY_3, StringUtil.decodeStringDoubleArray(ENCODED_STRING_ARRAY_3));
-    }
-
-    @Test
-    public void testBooleanToBinaryString() {
-        assertEquals("0", ModelStringUtil.booleanToBinaryString(false));
-        assertEquals("1", ModelStringUtil.booleanToBinaryString(true));
     }
 
     @Test
@@ -268,31 +251,6 @@ public class StringUtilTest {
     @Test
     public void testIntValueOfWithNullExceptionfIfStringEmpty() {
         assertEquals(Optional.empty(), StringUtil.intValueOfOptional(""));
-    }
-
-    @Test
-    public void testQuoteSimple() {
-        assertEquals("a::", ModelStringUtil.quote("a:", "", ':'));
-    }
-
-    @Test
-    public void testQuoteNullQuotation() {
-        assertEquals("a::", ModelStringUtil.quote("a:", null, ':'));
-    }
-
-    @Test
-    public void testQuoteNullString() {
-        assertEquals("", ModelStringUtil.quote(null, ";", ':'));
-    }
-
-    @Test
-    public void testQuoteQuotationCharacter() {
-        assertEquals("a:::;", ModelStringUtil.quote("a:;", ";", ':'));
-    }
-
-    @Test
-    public void testQuoteMoreComplicated() {
-        assertEquals("a::b:%c:;", ModelStringUtil.quote("a:b%c;", "%;", ':'));
     }
 
     @Test
