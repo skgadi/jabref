@@ -64,7 +64,7 @@ public class MetaDataParser {
     }
 
     /**
-     * Reads the next unit. Units are delimited by ';'.
+     * Reads the next unit. Units are delimited by ';' (MetaData.SEPARATOR_CHARACTER).
      */
     private static Optional<String> getNextUnit(Reader reader) throws IOException {
         int c;
@@ -74,9 +74,9 @@ public class MetaDataParser {
             if (escape) {
                 res.append((char) c);
                 escape = false;
-            } else if (c == '\\') {
+            } else if (c == MetaData.ESCAPE_CHARACTER) {
                 escape = true;
-            } else if (c == ';') {
+            } else if (c == MetaData.SEPARATOR_CHARACTER) {
                 break;
             } else {
                 res.append((char) c);

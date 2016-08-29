@@ -25,6 +25,9 @@ import net.sf.jabref.model.metadata.MetaData;
 
 public class FieldFormatterCleanups {
 
+    public static final String ENABLED = "enabled";
+    public static final String DISABLED = "disabled";
+
     private final List<FieldFormatterCleanup> actions;
 
     private static List<Formatter> availableFormatters;
@@ -205,9 +208,9 @@ public class FieldFormatterCleanups {
         List<String> stringRepresentation = new ArrayList<>();
 
         if (enabled) {
-            stringRepresentation.add("enabled");
+            stringRepresentation.add(ENABLED);
         } else {
-            stringRepresentation.add("disabled");
+            stringRepresentation.add(DISABLED);
         }
 
         String formatterString = FieldFormatterCleanups.getMetaDataString(actions);
@@ -218,7 +221,7 @@ public class FieldFormatterCleanups {
     public static FieldFormatterCleanups parse(List<String> formatterMetaList) {
 
         if ((formatterMetaList != null) && (formatterMetaList.size() >= 2)) {
-            boolean enablementStatus = "enabled".equals(formatterMetaList.get(0));
+            boolean enablementStatus = ENABLED.equals(formatterMetaList.get(0));
             String formatterString = formatterMetaList.get(1);
             return new FieldFormatterCleanups(enablementStatus, formatterString);
         } else {

@@ -37,6 +37,10 @@ public class MetaData implements Iterable<String> {
     public static final String SELECTOR_META_PREFIX = "selector_";
     private static final String PROTECTED_FLAG_META = "protectedFlag";
 
+    public static final char ESCAPE_CHARACTER = '\\';
+    public static final char SEPARATOR_CHARACTER = ';';
+    public static final String SEPARATOR_STRING = String.valueOf(SEPARATOR_CHARACTER);
+
     private final Map<String, List<String>> metaData = new HashMap<>();
     private GroupTreeNode groupsRoot;
     private final EventBus eventBus = new EventBus();

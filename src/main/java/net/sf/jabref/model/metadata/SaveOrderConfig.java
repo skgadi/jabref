@@ -12,6 +12,9 @@ import java.util.Objects;
  */
 public class SaveOrderConfig {
 
+    private static final String ORIGINAL = "original";
+    private static final String SPECIFIED = "specified";
+
     public boolean saveInOriginalOrder;
 
     // quick hack for outside modifications
@@ -122,7 +125,7 @@ public class SaveOrderConfig {
         }
 
         String choice = data.get(0);
-        if ("original".equals(choice)) {
+        if (ORIGINAL.equals(choice)) {
             setSaveInOriginalOrder();
         } else {
             setSaveInSpecifiedOrder();
@@ -159,9 +162,9 @@ public class SaveOrderConfig {
     public List<String> getAsStringList() {
         List<String> res = new ArrayList<>(7);
         if (saveInOriginalOrder) {
-            res.add("original");
+            res.add(ORIGINAL);
         } else {
-            res.add("specified");
+            res.add(SPECIFIED);
         }
 
         res.add(sortCriteria[0].field);
