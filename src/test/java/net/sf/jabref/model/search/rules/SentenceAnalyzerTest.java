@@ -3,8 +3,6 @@ package net.sf.jabref.model.search.rules;
 import java.util.Arrays;
 import java.util.Collections;
 
-import net.sf.jabref.model.search.rules.SentenceAnalyzer;
-
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

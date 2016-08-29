@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.sf.jabref.model.entry.BibEntry;
-import net.sf.jabref.model.groups.AbstractGroup;
 
 import org.junit.Before;
 import org.mockito.Mockito;
@@ -14,7 +13,7 @@ import static org.mockito.Mockito.mock;
 public class AbstractGroupTest {
 
     private AbstractGroup group;
-    private List<BibEntry> entries = new ArrayList<>();
+    private final List<BibEntry> entries = new ArrayList<>();
 
     @Before
     public void setUp() throws Exception {

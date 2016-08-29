@@ -1,8 +1,6 @@
 package net.sf.jabref.model.groups;
 
 import net.sf.jabref.model.entry.BibEntry;
-import net.sf.jabref.model.groups.GroupHierarchyType;
-import net.sf.jabref.model.groups.SearchGroup;
 
 import org.junit.Test;
 

@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import net.sf.jabref.model.EntriesGroupChange;
 import net.sf.jabref.model.ParseException;
 import net.sf.jabref.model.database.BibDatabase;
 import net.sf.jabref.model.entry.BibEntry;

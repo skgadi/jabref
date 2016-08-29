@@ -1,9 +1,10 @@
-package net.sf.jabref.model;
+package net.sf.jabref.model.groups;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
+import net.sf.jabref.model.FieldChange;
 import net.sf.jabref.model.entry.BibEntry;
 
 public class EntriesGroupChange {

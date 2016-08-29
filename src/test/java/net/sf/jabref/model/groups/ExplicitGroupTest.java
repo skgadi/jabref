@@ -4,8 +4,6 @@ import net.sf.jabref.model.ParseException;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.entry.BibtexEntryTypes;
 import net.sf.jabref.model.entry.IdGenerator;
-import net.sf.jabref.model.groups.ExplicitGroup;
-import net.sf.jabref.model.groups.GroupHierarchyType;
 
 import org.junit.Test;
 

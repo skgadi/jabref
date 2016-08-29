@@ -3,6 +3,10 @@ package net.sf.jabref.model.util;
 
 public class ModelStringUtil {
 
+    // Non-letters which are used to denote accents in LaTeX-commands, e.g., in {\"{a}}
+    public static final String SPECIAL_COMMAND_CHARS = "\"`^~'=.|";
+
+
     /**
      * Unquote special characters.
      *
@@ -49,17 +53,17 @@ public class ModelStringUtil {
         if (toQuote == null) {
             return "";
         }
-    
+
         StringBuilder result = new StringBuilder();
         char c;
         boolean isSpecial;
         for (int i = 0; i < toQuote.length(); ++i) {
             c = toQuote.charAt(i);
-    
+
             isSpecial = (c == quoteChar);
             // If non-null specials performs logic-or with specials.indexOf(c) >= 0
             isSpecial |= ((specials != null) && (specials.indexOf(c) >= 0));
-    
+
             if (isSpecial) {
                 result.append(quoteChar);
             }
@@ -67,8 +71,4 @@ public class ModelStringUtil {
         }
         return result.toString();
     }
-
-    // Non-letters which are used to denote accents in LaTeX-commands, e.g., in {\"{a}}
-    public static final String SPECIAL_COMMAND_CHARS = "\"`^~'=.|";
-
 }

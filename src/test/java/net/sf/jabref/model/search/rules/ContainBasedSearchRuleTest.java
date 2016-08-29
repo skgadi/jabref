@@ -3,8 +3,6 @@ package net.sf.jabref.model.search.rules;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.entry.BibtexEntryTypes;
 import net.sf.jabref.model.entry.IdGenerator;
-import net.sf.jabref.model.search.rules.ContainBasedSearchRule;
-import net.sf.jabref.model.search.rules.RegexBasedSearchRule;
 
 import org.junit.Assert;
 import org.junit.Test;

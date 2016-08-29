@@ -1,7 +1,5 @@
 package net.sf.jabref.model.groups;
 
-import net.sf.jabref.model.groups.AllEntriesGroup;
-
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

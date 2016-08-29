@@ -10,9 +10,9 @@ import javax.swing.AbstractAction;
 import net.sf.jabref.gui.BasePanel;
 import net.sf.jabref.gui.undo.NamedCompound;
 import net.sf.jabref.logic.l10n.Localization;
-import net.sf.jabref.model.EntriesGroupChange;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.groups.AbstractGroup;
+import net.sf.jabref.model.groups.EntriesGroupChange;
 import net.sf.jabref.model.groups.GroupTreeNode;
 
 public class AddToGroupAction extends AbstractAction {

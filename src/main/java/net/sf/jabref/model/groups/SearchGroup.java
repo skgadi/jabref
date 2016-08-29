@@ -3,7 +3,6 @@ package net.sf.jabref.model.groups;
 import java.util.List;
 import java.util.Optional;
 
-import net.sf.jabref.model.EntriesGroupChange;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.search.GroupSearchQuery;
 import net.sf.jabref.model.search.rules.SearchRule;

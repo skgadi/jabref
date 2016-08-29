@@ -10,8 +10,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
-import java.util.Vector;
-
 import net.sf.jabref.model.bibtexkeypattern.AbstractBibtexKeyPattern;
 import net.sf.jabref.model.bibtexkeypattern.DatabaseBibtexKeyPattern;
 import net.sf.jabref.model.bibtexkeypattern.GlobalBibtexKeyPattern;
@@ -86,17 +84,6 @@ public class MetaData implements Iterable<String> {
             return Optional.of(SaveOrderConfig.parse(storedSaveOrderConfig));
         }
         return Optional.empty();
-    }
-
-    /**
-     * Add default metadata for new database:
-     */
-    public void initializeNewDatabase() {
-        metaData.put(SELECTOR_META_PREFIX + FieldName.KEYWORDS, new Vector<>());
-        metaData.put(SELECTOR_META_PREFIX + FieldName.AUTHOR, new Vector<>());
-        metaData.put(SELECTOR_META_PREFIX + FieldName.JOURNAL, new Vector<>());
-        metaData.put(SELECTOR_META_PREFIX + FieldName.PUBLISHER, new Vector<>());
-        metaData.put(SELECTOR_META_PREFIX + FieldName.REVIEW, new Vector<>());
     }
 
     /**

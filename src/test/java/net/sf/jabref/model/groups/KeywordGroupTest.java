@@ -2,8 +2,6 @@ package net.sf.jabref.model.groups;
 
 import net.sf.jabref.model.ParseException;
 import net.sf.jabref.model.entry.BibEntry;
-import net.sf.jabref.model.groups.GroupHierarchyType;
-import net.sf.jabref.model.groups.KeywordGroup;
 
 import org.junit.Test;
 

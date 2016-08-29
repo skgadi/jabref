@@ -7,7 +7,6 @@ import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import net.sf.jabref.model.EntriesGroupChange;
 import net.sf.jabref.model.FieldChange;
 import net.sf.jabref.model.ParseException;
 import net.sf.jabref.model.entry.BibEntry;
